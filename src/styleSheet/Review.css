@@ -1,0 +1,71 @@
+.review {
+ 
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevents overflow of animated elements */
+}
+
+.review-container {
+  display: flex;
+  animation: moveCards 20s linear infinite; /* Change duration to 20 seconds */
+}
+
+.review-main {
+  border: 1px solid rgb(196, 184, 24);
+  max-width: 30rem;
+  margin: 0 1rem;
+  padding: 2rem;
+  flex-shrink: 0; /* Prevents shrinking */
+}
+
+.review-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review-heading {
+  margin: 1rem 0 0.5rem;
+  text-align: center;
+}
+
+.review-para {
+  text-align: center;
+  margin: 0.5rem;
+}
+
+/* Define the animation */
+@keyframes moveCards {
+  0% {
+    transform: translateX(100%); /* Start off-screen to the right */
+  }
+  50% {
+    transform: translateX(0); /* Move to the original position */
+  }
+  100% {
+    transform: translateX(-100%); /* Move off-screen to the left */
+  }
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+  .review-main {
+    max-width: 25%;
+  }
+
+  .review {
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .review-main {
+    max-width: 20%;
+  }
+
+  .review {
+    padding: 2rem 0;
+  }
+}

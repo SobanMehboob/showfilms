@@ -1,0 +1,115 @@
+/* Main contact section */
+.contact {
+    padding: 3rem 1rem; /* Add padding around the contact section */
+    /* background-color: #f9f9f9; Light background for contrast */
+  }
+  
+  /* Main container for the contact form and image */
+  .contact-main {
+    margin: 3rem 0;
+    padding: 3rem 1rem;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start for better spacing */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  /* Left side for the image */
+  .contact-left {
+ 
+    flex: 1 1 300px; /* Allow it to grow and shrink, with a minimum width */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the image vertically */
+  }
+  
+  /* Image styles */
+  .contact-img {
+    margin-top: 5rem;
+    max-height: 25rem; /* Maintain aspect ratio */
+    max-width: 100%; /* Responsive image width */
+  }
+  
+  /* Right side for the contact form */
+  .contact-right {
+   
+    flex: 1 1 300px; /* Allow it to grow and shrink, with a minimum width */
+    padding: 1rem; /* Padding around the form */
+  }
+  
+  /* Contact form styles */
+  .contact-form {
+    background-color: white; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    padding: 2rem; /* Padding inside the form */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Form Element Styles */
+  .contact-form div {
+    margin-bottom: 1.5rem; /* Space between fields */
+  }
+  
+  label {
+    display: block; /* Block display for labels */
+    font-weight: 600; /* Bold labels */
+    margin-bottom: 0.5rem; /* Space below labels */
+    color: #333; /* Darker text color */
+  }
+  
+  input,
+  textarea {
+    width: 100%; /* Full width inputs */
+    padding: 0.8rem; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Default border color */
+    border-radius: 4px; /* Rounded corners */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+  }
+  
+  /* Styles for input error state */
+  .input-error {
+    border-color: red; /* Red border for error */
+  }
+  
+  /* Error Message Styles */
+  .error-message {
+    color: red; /* Red text for error messages */
+    font-size: 0.875rem; /* Slightly smaller text */
+    margin-top: 0.25rem; /* Space above error messages */
+  }
+  
+  /* Button Styles */
+  button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text */
+    padding: 0.8rem 1.5rem; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-weight: 600; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth transition for background */
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .contact-main {
+      flex-direction: column; /* Stack items on smaller screens */
+    }
+  
+    .contact-left,
+    .contact-right {
+      width: 100%; /* Full width on small screens */
+      border: none; /* Remove borders on small screens */
+    }
+  
+    .contact-right {
+      padding: 1rem; /* Less padding on smaller screens */
+    }
+  }
+  

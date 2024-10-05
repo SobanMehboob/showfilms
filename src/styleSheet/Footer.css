@@ -1,0 +1,134 @@
+.footer {
+    margin-top: 2rem;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+/* Each part of the footer */
+.part {
+    text-align: center;
+    margin: 3rem 0;
+    padding: 2rem;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    font-weight: 500;
+}
+
+/* Footer paragraph */
+.footer-para {
+    font-size: 1.2rem;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.footer-para:hover {
+    font-size: 1.3rem;
+    border-bottom: 1px solid gray;
+}
+
+/* Icons under the footer */
+.part-under {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.footer-icon {
+    font-size: 1.5rem;
+    margin: 2rem;
+    padding: 1.1rem;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 100%;
+}
+
+.footer-icon:hover{
+    transform: scale(1.2);
+    border: 1px solid rgb(22, 22, 22);
+}
+
+.facebook{
+    color: rgb(70, 102, 192);
+}
+
+.insta{
+    color: rgb(243, 72, 166);
+}
+
+.twitter{
+    color: rgb(52, 173, 194);
+}
+
+.google{
+    color: rgb(167, 9, 9);
+}
+
+/* Footer bottom text */
+.footer-end {
+    text-align: center;
+    color: rgb(100, 100, 100);
+}
+
+.footer-end p {
+    margin: 1.5rem;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-main {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .part {
+        margin: 2rem 0;
+        padding: 1rem;
+    }
+
+    .footer-para {
+        font-size: 1rem;
+    }
+
+    .footer-icon {
+        font-size: 1.2rem;
+        margin: 1rem;
+        padding: 0.8rem;
+    }
+
+    .footer-end p {
+        margin: 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-main {
+        padding: 0.5rem;
+    }
+
+    .part {
+        margin: 1.5rem 0;
+        padding: 0.5rem;
+    }
+
+    .footer-para {
+        font-size: 0.9rem;
+    }
+
+    .footer-icon {
+        font-size: 1rem;
+        margin: 0.5rem;
+        padding: 0.6rem;
+    }
+
+    .footer-end p {
+        margin: 0.8rem;
+        font-size: 0.8rem;
+    }
+}

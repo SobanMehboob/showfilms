@@ -1,0 +1,96 @@
+.two-icon{
+    color: #ff3401;
+}
+.print{
+    color: #131212;
+}
+
+.print-two{
+    color: rgb(250, 250, 131);
+}
+
+.print-new{
+    color: yellow;
+}
+
+
+.main-herotwo {
+    display: flex;
+    flex-direction: column; /* Stack vertically by default */
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  
+}
+
+.left-herotwo {
+    /* border: 1px solid black; */
+    width: 100%; /* Full width for the left section */
+    display: flex;
+    justify-content: center; /* Center the image */
+}
+
+.image-herotwo {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.right-herotwo {
+    /* border: 1px solid black; */
+    background: #dbdbdb;
+    width: 100%; /* Full width for the right section */
+    padding: 1rem; /* Add padding for better content spacing */
+    text-align: center; /* Center text */
+    margin-right: 3rem;
+}
+
+.herotwo-heading {
+    color: #003ce0;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.herotwo-para {
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.herotwo-same {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 4rem 0;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .main-herotwo {
+        flex-direction: row; /* Change to row layout on larger screens */
+    }
+
+    .left-herotwo {
+        flex: 1; /* Allow left section to take up more space */
+        margin-left: 5rem; /* Add left margin */
+    }
+
+    .right-herotwo {
+        flex: 1; /* Allow right section to take up more space */
+        margin-left: 2rem; /* Space between left and right sections */
+    }
+}
+
+@media (max-width: 486px) {
+    .herotwo-heading {
+        font-size: 2rem; /* Adjust heading size for smaller screens */
+    }
+
+    .herotwo-para {
+        font-size: 1rem; /* Adjust paragraph size for smaller screens */
+    }
+
+    .herotwo-same {
+        font-size: 2rem; /* Adjust footer size for smaller screens */
+    }
+}
